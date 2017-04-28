@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500">
+    <title>Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 16pt;
+        }
+        
+        .link {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        
+        button {
+            background-color: #595757;
+            color: #FFFFFF;
+            width: 460px;
+            height: 2em;
+            border: none;
+            border-radius: 5px;
+            font-size: 16pt;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+        
+        #page {
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #title {
+            text-align: center;
+            font-size: 24pt;
+            margin-top: 10px;
+        }
+        
+        .cap {
+            border-left: 5px solid gray;
+            font-size: 18pt;
+            padding-left: 5px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        .usage {
+            padding: 10px;
+        }
+        .intro {
+            font-size: 14pt;
+        }
+        ul {
+            padding-left: 30px;
+        }
+        li {
+            font-size: 14pt;
+        }
+        .footer {
+            width: 100%;
+            text-align: center;
+            font-size: 12pt;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <div id="title">Confidential Assets Demo</div>
+        <hr>
+        <div>
+            <div class="cap">Alice&nbsp;(http://alice.bc3.jp/)</div>
+            <div class="link">
+                <a href="http://alice.bc3.jp/" target="_blank">
+                    <button>Wallet&nbsp;&nbsp;(http://alice.bc3.jp/)</button>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div class="cap">Dave&nbsp;(http://dave.bc3.jp/)</div>
+            <div class="link">
+                <a href="http://dave.bc3.jp/order.html" target="_blank">
+                    <button>Order (http://dave.bc3.jp/order.html)</button>
+                </a>
+            </div>
+            <div class="link">
+                <a href="http://dave.bc3.jp/list.html" target="_blank">
+                    <button>Order List (http://dave.bc3.jp/list.html)</button>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="usage">
+            <div>Usage:</div>
+            <br>
+            <div>Introduction</div>
+            <div class="intro">This is a demonstration showing how Alice goes to Dave's coffee shop and buys coffee (200 MELON points). Alice
+                doesn't actually have the MELON points, so instead she buys the coffee by converting AIRSKY points first.</div>
+            <br>
+            <div>Step 1. Order</div>
+            <ul>
+                <li>Open Dave's Order page</li>
+                <br>
+                <li>Click the Order button</li>
+                <li>A QR code appears</li>
+                <li>Click the QR code. The content is copied into the clipboard.</li>
+            </ul>
+            <br>
+            <div>Step 2. Payment</div>
+            <ul>
+                <li>Open Alice's Wallet page</li>
+                <br>
+                <li>Paste the previously copied content into the ADDRESS</li>
+                <li>Click outside the input field to reveal the product information</li>
+                <li>Scroll down to see the list of points. AIRSKY is the only one you can click, because it's the only one with
+                    enough balance.</li>
+                <li>A Confirmation dialog appears. Click Yes.</li>
+            </ul>
+            <br>
+            <div>Step 3. Confirmation</div>
+            <ul>
+                <li>Open Dave's Order List page</li>
+                <br>
+                <li>The top item in the list will have changed to Paid</li>
+            </ul>
+            <br>
+        </div>
+        <hr>
+        <div class="footer">Copyright (c) 2017 DG Lab</div>
+    </div>
+</body>
+
+</html>
+
